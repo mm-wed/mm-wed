@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/fonts.css">
+    <link rel="icon" href="/logo.png" type="image/x-icon">
+    <title>Max & Mina</title>
+</head>
+<body>
+    <header>
+        <img src="/assets/logo-02.png" alt="m&m monogram" height="20px">
+        <nav class="desktop-menu">
+            <!-- <ul class="nav-bar">
+                <li><a>Us</a></li>
+                <li><a>The Wedding</a></li>
+                <li><a>Travel</a></li>
+                <li><a>Q&A</a></li>
+                <li><a>Registry</a></li>
+                <li><a>RSVP</a></li>
+            </ul> -->
+            <ul class="lang">
+                <li><a href="/index/es.html"><img src="/assets/mx-flag.png" width="15px"></a></li>
+                <li><p>|</p></li>
+                <li><a href="/index/en.html"><img src="/assets/usa-flag.png" width="15px"></a></li>
+            </ul>
+        </nav>
+
+        <!-- <div class="mobile-menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav class="mobile-menu">
+            <ul class="nav-bar">
+                <li><a>Us</a></li>
+                <li><a>The Wedding</a></li>
+                <li><a>Travel</a></li>
+                <li><a>Q&A</a></li>
+                <li><a>Registry</a></li>
+                <li><a>RSVP</a></li>
+            </ul>
+            <ul class="lang">
+                <li><a href="/index/es.html"><img src="/assets/mx-flag.png" width="15px"></a></li>
+                <li><p>|</p></li>
+                <li><a href="/index/en.html"><img src="/assets/usa-flag.png" width="15px"></a></li>
+            </ul>
+        </nav> -->
+    </header>
+    
+    <section class="hero">
+        <div class="marquee-wrapper">
+            <div class="marquee">
+                <h1 class="title">max <span class="italic">& mina & </span></h1>
+            </div>
+            <div class="marquee marquee2">
+                <h1 class="title"> max <span class="italic">& mina & </span></h1>
+            </div>
+            <div class="marquee marquee3">
+                <h1 class="title"> max <span class="italic">& mina & </span></h1>
+            </div>
+        </div>
+        <div class="details">
+            <h4>05 · Octubre · 2024</h4>
+            <h4>Cancún, México</h4>
+        </div>
+    </section>
+    
+    <section class="countdown-container">
+        <div class="script">
+            <!-- <h1>you, me <span class="and">&</span> the sea</h1> -->
+            <h1>ir al mar es ir a ti...</h1>
+        </div>
+        <div class="countdown">
+            <div>
+                <p id="days">00</p>
+                <span>Días</span>
+            </div>
+            <div>
+                <p id="hours">00</p>
+                <span>Horas</span>
+            </div>
+            <div>
+                <p id="minutes">00</p>
+                <span>Minutos</span>
+            </div>
+            <div>
+                <p id="seconds">00</p>
+                <span>Segundos</span>
+            </div>
+        </div>
+    </section>
+    
+    <section class="form">
+        <div class="text">
+            <p>Aún nos falta mucho por planear <br>Espera noticias pronto! </p>
+            <p>Por ahora, dejanos tus datos para mantenerte al tanto.</p>
+        </div>
+        <form name="submit-to-google-sheet">
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            <br>
+
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            <br>
+
+            <textarea id="questions" name="questions" rows="4" placeholder="Preguntas, comentarios, sugerencias para el DJ...?" required></textarea>
+            <br>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </section>
+    
+    <footer>
+        <p>¿Tienes alguna pregunta?  <br> Nos puedes mandar un correo a  <a href="mailto:maxandminaforever.com" target="_blank">maxandminaforever@gmail.com</a>, <br>o nos puedes llamar o mandar un mensaje. <br>Nos encantaría compartir contigo un día tan especial para nosotros, <br>¡ya queremos verte!</p>
+    </footer>
+
+    <script src="/scripts/googleSheets.js"></script>
+    <script src="/scripts/header.js"></script>
+    <script src="/scripts/countdown.js"></script>
+    <script src="/scripts/mobileMenu.js"></script>
+</body>
+</html>

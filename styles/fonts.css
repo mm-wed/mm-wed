@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Arlana';
+    src: url(/assets/fonts/kanfala\ Arlana.otf);
+}
+
+@font-face {
+    font-family: 'PerfectlyNineties-Reg';
+    src: url(/assets/fonts/PerfectlyNineties-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'PerfectlyNineties-Ital';
+    src: url(/assets/fonts/PerfectlyNineties-RegularItalic.ttf);
+}
+
+@font-face {
+    font-family: 'PerfectlyNineties-bold';
+    src: url(/assets/fonts/PerfectlyNineties-Semibold.ttf);
+}
+
+@font-face {
+    font-family: 'PerfectlyNineties-boldIta';
+    src: url(/assets/fonts/PerfectlyNineties-SemiboldItalic.ttf);
+}

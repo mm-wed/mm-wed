@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'PerfectlyNineties-Reg', serif, Helvatica;
+    font-size: 16px;
+    background-color: #efecda;
+    scroll-behavior: smooth;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.3s background ease-in-out;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    list-style: none;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.nav-bar > li {
+    padding-left: 1.5rem;
+}
+
+.nav-bar > li > a {
+    cursor: pointer;
+}
+
+.nav-bar > li > a:hover {
+    color: rgb(255, 255, 171);
+}
+
+.lang {
+    margin-left: 1.5rem;
+    cursor: pointer;
+    gap: 5px;
+    justify-self: center;
+}
+
+.header-scroll {
+    background-color: #4d7dbf;
+    color: #efecda;
+    transition: 0.3s background ease-in-out;
+}
+
+/* Hero Styles */
+.hero {
+    background: url('/assets/M&M-115.png') no-repeat top center / cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    gap: 25%;
+    z-index: -2;
+    padding-bottom: 0.8rem;
+    color: #efecda;
+}
+
+.marquee-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.marquee h1 {
+    text-align: center;
+    white-space: nowrap;
+    padding: 0 1rem;
+    height: 100%;
+    animation: marquee 12s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.title {
+    font-size: 10rem;
+}
+
+.italic {
+    font-family: 'PerfectlyNineties-Ital', serif, Helvatica;
+}
+
+.details {
+    font-size: 1.5rem;
+}
+
+/* Countdown Styles */
+.countdown-container {
+    height: 50vh;
+    background-image: url(/assets/bg-talavera.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.script > h1 {
+    font-family: 'Arlana', serif, Helvatica;
+    font-size: 3rem;
+}
+
+span.and {
+    font-family: 'PerfectlyNineties-Ital', serif, Helvetica;
+    font-size: 2rem;
+}
+
+.countdown {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.countdown-container p {
+    width: 5rem;
+}
+
+.countdown p{
+    font-size: 4rem;
+    text-align: center;
+}
+
+/* Form Styles */
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4d7cbf80;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.text {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    background-color: #efecda80;
+    padding: 2rem 3rem;
+    text-align: left;
+    border-radius: 30px;
+    width: 50%;
+    font-family: 'PerfectlyNineties-Bold', serif, Helvatica;
+    letter-spacing: 0.1rem;
+}
+
+form input, textarea {
+    border: 1px solid #4d7cbf;
+    margin-top: 0.5rem;
+    background-color: transparent;
+    resize: none;
+    font-family: 'PerfectlyNineties-Bold', serif, Helvatica;
+    letter-spacing: 0.1rem;
+}
+
+form input {
+    border-radius: 20px;
+    padding: 0.5rem 0.9rem;
+}
+
+form textarea {
+    border-radius: 25px;
+    padding: 0.7rem 0.9rem;
+}
+
+form input:focus, textarea:focus {
+    border: 3px solid #4d7cbf;
+}
+
+form #submit {
+    cursor: pointer;
+    font-family: 'PerfectlyNineties-Bold', serif, Helvatica;
+    letter-spacing: 0.1rem;
+}
+
+form #submit:hover {
+    background-color: #4d7cbf;
+    color: white;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4d7cbf;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 8rem 1rem 2rem 1rem;
+    color: white;
+    font-family: 'PerfectlyNineties-Reg', serif, Helvatica;
+    font-size: 1rem;
+}
+
+footer > p > a {
+    font-family: 'PerfectlyNineties-boldIta', serif, Helvatica;
+    text-decoration: none;
+    color: #efecda;
+    cursor: pointer;
+
+}
+
+/* Media Query */
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 10px;
+    }
+    
+    header ul {
+        align-items: center;
+    }
+    
+    .header-scroll {
+        background-color: #4d7cbf;
+    }
+
+    .hero {
+        background: url('/assets/M&M-115c.png') no-repeat top center / cover;
+        height: 35vh;
+        margin-top: 4rem;
+        padding-bottom: 1rem;
+    }
+    
+    .title {
+        font-size: 7rem;
+    }
+
+    .countdown-container {
+        height: 25vh;
+        gap: 1rem;
+    }
+    
+    .countdown p{
+        font-size: 3.5rem;
+    }
+
+    .form {
+        font-size: 2rem;
+    }
+
+    .text {
+        padding: 1rem 2rem;
+    }
+    
+    form {
+        margin-top: 1rem;
+        padding: 1.5rem;
+        border-radius: 30px;
+        width: 80%;
+        font-size: 1.2rem;
+    }
+    
+    form input {
+        border-radius: 20px;
+    }
+    
+    form textarea {
+        border-radius: 20px;
+        margin-top: 1.5rem;
+    }
+
+    footer {
+        padding: 5rem 1rem 2rem 1rem;
+    }
+}
