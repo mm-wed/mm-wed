@@ -208,16 +208,17 @@ form #submit {
     cursor: pointer;
     font-family: 'PerfectlyNineties-Bold', serif, Helvatica;
     letter-spacing: 0.1rem;
-}
-
-form #submit:hover {
     background-color: #4d7cbf;
     color: white;
 }
 
+form #submit:hover {
+    background-color: #89b0e3;
+}
+
 /* Footer Styles */
 footer {
-    background-color: #4d7cbf;
+    background-color: #77a7e9;
     text-align: center;
     display: flex;
     justify-content: center;
